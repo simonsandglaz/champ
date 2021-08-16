@@ -83,4 +83,8 @@ router.get('/social/:id/comments', (req, res) => {
 	res.render('comments', { title: 'My Social Life', question: {id: req.params.id, type: 'social'} });
 });
 
+router.get('/summary', (req, res) => {
+	res.render('summary', { title: 'Summary'});
+});
+
 module.exports = router;
