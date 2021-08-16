@@ -31,6 +31,10 @@ body {
   width: 100%;
 }
 
+.btn-start-assessment {
+  width: 100%;
+}
+
 .start-assessment {
   margin-top: 25px;
 }
