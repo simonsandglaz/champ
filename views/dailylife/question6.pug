@@ -1,0 +1,19 @@
+extends ../question
+
+block question_category
+	span Daily Life
+
+block question
+	p When taking my medications...
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio1' name='answer' value='option1')
+		label(class='form-check-label' for='answer1') I am responsible for taking my medications with their correct dosages at the correct time
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio2' name='answer' value='option2')
+		label(class='form-check-label' for='answer2') I have my medications with correct dosages and schedule prepared for me, but can take the medication myself
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio3' name='answer' value='option3')
+		label(class='form-check-label' for='answer3') I am not able to dispense or take my medications on my own
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio4' name='answer' value='option4')
+		label(class='form-check-label' for='answer4') I must have my meals prepared and served to me

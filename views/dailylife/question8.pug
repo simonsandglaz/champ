@@ -1,0 +1,16 @@
+extends ../question
+
+block question_category
+	span Daily Life
+
+block question
+	p When managing my finances...
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio1' name='answer' value='option1')
+		label(class='form-check-label' for='answer1') I collect and keep track of my income and manage my finances (making purchases, writing cheques, paying bills, etc.) independently
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio2' name='answer' value='option2')
+		label(class='form-check-label' for='answer2') I can do day-to-day purchases, but need help with banking and major expenses
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio3' name='answer' value='option3')
+		label(class='form-check-label' for='answer3') I am incapable of handling money

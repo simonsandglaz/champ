@@ -1,0 +1,16 @@
+extends layout
+
+
+block navigation
+	nav(class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark')
+		a(class='navbar-brand' href='#') My Assessment
+block content
+	div(class='jumbotron')
+		div(class='container-md menu')
+			div(class='list-group')
+				a(href='mentalhealth' class='list-group-item') Mental Health
+				a(href='physicalhealth' class='list-group-item') Physical Health
+				a(href='dailylife' class='list-group-item') Home Life
+				a(href='outsidelife' class='list-group-item') Life Outside the Home
+
+			button(type="button" class="btn btn-primary btn-lg btn-block col-12 start-assessment") Start Assessment

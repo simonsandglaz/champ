@@ -1,0 +1,13 @@
+extends ../question
+
+block question_category
+	span Daily Life
+
+block question
+	p Do you use any mobility items (i.e. Scooter, walker, cane)...
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio1' name='answer' value='option1')
+		label(class='form-check-label' for='answer1') No
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio2' name='answer' value='option2')
+		label(class='form-check-label' for='answer2') Yes
