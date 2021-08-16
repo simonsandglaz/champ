@@ -1,0 +1,24 @@
+extends ../question
+
+block question_category
+	span Social
+
+block question
+	h4 Over the past 4 weeks, how much has your physical health or emotional problems interfered with your social activities (like visiting friends or relatives)?
+
+block answers
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio1' name='answer' value='option1')
+		label(class='form-check-label' for='radio1') All of the time
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio2' name='answer' value='option2')
+		label(class='form-check-label' for='radio2') Most of the time
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio3' name='answer' value='option3')
+		label(class='form-check-label' for='radio3') Some of the time
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio4' name='answer' value='option4')
+		label(class='form-check-label' for='radio4') A little of the time
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio4' name='answer' value='option4')
+		label(class='form-check-label' for='radio4') Not at all

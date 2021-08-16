@@ -1,0 +1,24 @@
+extends ../question
+
+block question_category
+	span Social
+
+block question
+	h4 Compared to others your age, are your social activities more or less limited because of your physical health or emotional problems?
+
+block answers
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio1' name='answer' value='option1')
+		label(class='form-check-label' for='radio1') Much more
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio2' name='answer' value='option2')
+		label(class='form-check-label' for='radio2') Somewhat less
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio3' name='answer' value='option3')
+		label(class='form-check-label' for='radio3') About the same
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio4' name='answer' value='option4')
+		label(class='form-check-label' for='radio4') Somewhat less
+	div(class='form-check')
+		input(class='form-check-input' type='radio' id='radio4' name='answer' value='option4')
+		label(class='form-check-label' for='radio4') Much less

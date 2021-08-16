@@ -19,8 +19,16 @@ body {
   padding: 0px;
 }
 
+.navbar.comment-buttons {
+  padding: 0px;
+}
+
 .question-buttons .btn {
   width: 50%;
+}
+
+.comment-buttons .btn {
+  width: 100%;
 }
 
 .start-assessment {

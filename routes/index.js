@@ -23,23 +23,64 @@ router.get('/dailylife', (req, res) => {
 });
 
 router.get('/dailylife/:id', (req, res) => {
-	res.render('dailylife/question' + req.params.id, { title: 'My Daily Life', question: {id: parseInt(req.params.id), type: 'dailylife'} });
+	if (req.params.id == "11"){
+		res.render('mentalhealth/question1', { title: 'My Daily Life', question: {id: 1, type: 'mentalhealth'} });
+	}
+	else {
+		res.render('dailylife/question' + req.params.id, { title: 'My Daily Life', question: {id: parseInt(req.params.id), type: 'dailylife'} });
+	}
 });
 
 router.get('/dailylife/:id/comments', (req, res) => {
 	res.render('comments', { title: 'My Daily Life', question: {id: req.params.id, type: 'dailylife'} });
 });
 
+
 router.get('/mentalhealth', (req, res) => {
 	res.render('mentalhealth/question1', { title: 'My Mental Health', question: {id: 1, type: 'mentalhealth'} });
 });
 
 router.get('/mentalhealth/:id', (req, res) => {
+	if (req.params.id == "2"){
+		res.render('physicalhealth/question1', { title: 'Physical Health', question: {id: 1, type: 'physicalhealth'} });
+	}
 	res.render('mentalhealth/question' + req.params.id, { title: 'My Mental Health', question: {id: parseInt(req.params.id), type: 'mentalhealth'} });
 });
 
 router.get('/mentalhealth/:id/comments', (req, res) => {
 	res.render('comments', { title: 'My Mental Health', question: {id: req.params.id, type: 'mentalhealth'} });
+});
+
+
+router.get('/physicalhealth', (req, res) => {
+	res.render('physicalhealth/question1', { title: 'My Physical Health', question: {id: 1, type: 'physicalhealth'} });
+});
+
+router.get('/physicalhealth/:id', (req, res) => {
+	if (req.params.id == "5"){
+		res.render('social/question1', { title: 'Social', question: {id: 1, type: 'social'} });
+	}
+	res.render('physicalhealth/question' + req.params.id, { title: 'My Physical Health', question: {id: parseInt(req.params.id), type: 'physicalhealth'} });
+});
+
+router.get('/physicalhealth/:id/comments', (req, res) => {
+	res.render('comments', { title: 'My Physical Health', question: {id: req.params.id, type: 'physicalhealth'} });
+});
+
+
+router.get('/social', (req, res) => {
+	res.render('social/question1', { title: 'My Social Life', question: {id: 1, type: 'social'} });
+});
+
+router.get('/social/:id', (req, res) => {
+	if (req.params.id == "8"){
+		res.render('summary', { title: 'Summary', question: {id: 1, type: 'summary'} });
+	}
+	res.render('social/question' + req.params.id, { title: 'My Social Life', question: {id: parseInt(req.params.id), type: 'social'} });
+});
+
+router.get('/social/:id/comments', (req, res) => {
+	res.render('comments', { title: 'My Social Life', question: {id: req.params.id, type: 'social'} });
 });
 
 module.exports = router;
