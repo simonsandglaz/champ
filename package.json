@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon ./start.js"
+    "watch": "nodemon ./start.js",
+    "start": "node start.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,9 @@
     "express": "^4.17.1",
     "express-validator": "^6.12.0",
     "pug": "^3.0.2"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "devDependencies": {
     "nodemon": "^2.0.8"
