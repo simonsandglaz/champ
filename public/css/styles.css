@@ -31,6 +31,23 @@ body {
   padding: .5rem 1rem;
 }
 
+div.welcome h1 {
+  margin-bottom: 25px;
+}
+
+div.welcome div.d-grid {
+  margin-top: 50px;
+}
+
+div.answers {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+div.question h4 {
+  margin-bottom: 20px;
+}
+
 .navbar-brand.back {
   padding-left: 15px;
   padding-right: 15px;

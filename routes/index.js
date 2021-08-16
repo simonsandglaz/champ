@@ -7,7 +7,11 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-	res.render('assessment', { title: 'My Assessment' });
+	res.render('welcome', { title: 'Welcome to CHAMP' });
+});
+
+router.get('/welcome', (req, res) => {
+	res.render('welcome', { title: 'Welcome to CHAMP' });
 });
 
 router.get('/assessment', (req, res) => {
