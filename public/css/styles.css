@@ -6,6 +6,26 @@ body {
   padding-top: 4.5rem;
 }
 
+p {
+  font-size: larger;
+}
+
+a {
+  font-size: larger;
+}
+
+label {
+  font-size: larger;
+}
+
+nav.question-buttons .btn {
+  padding: 1rem;
+}
+
+nav.comment-buttons .btn {
+  padding: 1rem;
+}
+
 .container-fluid-nav div{
   display: flex;
   justify-content: space-around;

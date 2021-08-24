@@ -14,6 +14,10 @@ router.get('/welcome', (req, res) => {
 	res.render('welcome', { title: 'Welcome to CHAMP' });
 });
 
+router.get('/welcome2', (req, res) => {
+	res.render('welcome2', { title: 'Welcome to CHAMP' });
+});
+
 router.get('/assessment', (req, res) => {
 	res.render('assessment', { title: 'My Assessment' });
 });
