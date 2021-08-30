@@ -5,52 +5,15 @@ block navigation
 		div(class="container-fluid-nav text-center")
 			a(class='navbar-brand back' href='/assessment')
 				i(class="fas fa-arrow-left")
-			a(class='navbar-brand' href='#') Summary
-
-	nav(class="navbar container-fluid-nav fixed-bottom navbar-expand-lg navbar-light bg-light comment-buttons")
-		a(href=("#") class="btn btn-primary btn-lg" role="button") Submit
 
 block content
-	h4 When I use the telephone at home I am able to...
-	p Use the telephone of my own initiative, including looking up and dialing phone numbers
-	h4 When I do the laundry I am able to...
-	p Do the entire laundry completely
-	h4 When I go shopping...
-	p I am able to take care of all of my shopping needs independently
-	h4 When I am going somewhere outside of the house...
-	p I am able to drive or take public transportation
-	h4 When I eat...
-	p I am able to plan and serve myself adequate meals independently
-	h4 When taking my medications...
-	p I am responsible for taking my medications with their correct dosages at the correct time
-	h4 When doing housekeeping...
-	p I maintain my house alone or with little assistance for some tasks
-	h4 When managing my finances...
-	p I collect and keep track of my income and manage my finances (making purchases, writing cheques, paying bills, etc.) 
-	h4 Do you use any mobility items (i.e. Scooter, walker, cane)...
-	p Yes
-	h4 How many falls have you had in the last 6 months?
-	p 0
-	h4 Little interest or pleasure in doing things
-	p Several days
-	h4 Feeling down, depressed, or hopeless
-	p Several days
-	h4 Have you lost 10% of your body weight (about 10-15 pounds) or more during the last 6 months?
-	p No
-	h4 During the last 12 months, how often did you usually have any kind of drink containing alcohol?
-	p Once a month
-	h4 During the last 12 months, how many alcoholic drinks did you have on a typical day when you drank alcohol?
-	p 1 drink
-	h4 Have you ever had difficulty with your hearing?
-	p Yes
-	h4 Do you find it difficult to follow a conversation if there is background noise, such as TV, radio or children playing?
-	form
-	p No
-	h4 How often do you have someone to help you with chores when you are sick?
-	p Most of the time
-	h4 How often do you have someone to turn to suggestions for how to deal with a personal problem?
-	p Most of the time
-	h4 How often do you have someone to turn to do something enjoyable with?
-	p A little of the time
-	h4 How often do you have someone to turn to love and make you feel wanted?
-	p Some of the time
+	p Thank you for completing your comprehensive health assessment. When you submit this assessment, your answers and any accompanying comments will be sent to your cancer team. If you would like to add any comments to any of your questions, you may go back and do so before submitting this assessment.
+	div(class='container-md menu summary-buttons')
+		div(class="form-check")
+			input(class="form-check-input" type="checkbox" value="" id="flexCheckDefault")
+			label(class="form-check-label" for="flexCheckDefault") Send me an email summary of my responses on this assessment
+		div(class="form-check")
+			input(class="form-check-input" type="checkbox" value="" id="flexCheckChecked")
+			label(class="form-check-label" for="flexCheckDefault") Send me an email with health recommendations based on how I answered in this assessment
+
+		a(href=("/thankyou") class="btn btn-primary btn-lg btn-thankyou" role="button" aria-pressed="true") Submit Assessment

@@ -91,4 +91,8 @@ router.get('/summary', (req, res) => {
 	res.render('summary', { title: 'Summary'});
 });
 
+router.get('/thankyou', (req, res) => {
+	res.render('thankyou', { title: 'Thank You'});
+});
+
 module.exports = router;

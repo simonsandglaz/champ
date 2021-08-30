@@ -36,6 +36,10 @@ label {
   font-size: larger;
 }
 
+a.btn-thankyou {
+	width: 100%;
+}
+
 @media (min-width: 767px) {
 	nav.question-buttons-nav {
 		display: none;
@@ -48,23 +52,18 @@ label {
 	}
 }
 
-
-aside.primary {
-  float: right;
-  width: 350px;
-  @include breakpoint(sm) {
-    float: none;
-    width: 100%;
-  }
-}
-
 nav.question-buttons .btn {
   padding: 1rem;
-
 }
 
 nav.comment-buttons .btn {
   padding: 1rem;
+}
+
+div.question-buttons-separate .btn {
+	padding: 1rem;
+	margin: 10px;
+	width: 45%;
 }
 
 .container-fluid-nav div{
