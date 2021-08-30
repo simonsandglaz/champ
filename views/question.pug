@@ -8,12 +8,18 @@ block navigation
 			a(class='navbar-brand' href='#')
 				block question_category
 					Mental Health
-	nav(class="navbar container-fluid-nav fixed-bottom navbar-expand-lg navbar-light bg-light question-buttons")
+	nav(class="navbar container-fluid-nav fixed-bottom navbar-expand-lg navbar-light bg-light question-buttons-nav question-buttons")
 		a(href=("/" + question.type + "/" + question.id + "/comments") class="btn btn-secondary btn-lg" role="button" aria-pressed="true") Add Comments
 		a(href=("/" + question.type + "/" + (question.id + 1)) class="btn btn-primary btn-lg" role="button" aria-pressed="true") Next Question&nbsp;
 			i(class="fas fa-arrow-right")
+
 block content
 	div(class="question")
 		block question
 	div(class="answers")
 		block answers
+
+	div(class='container-md menu question-buttons question-buttons-separate')
+		a(href=("/" + question.type + "/" + question.id + "/comments") class="btn btn-secondary btn-lg" role="button" aria-pressed="true") Add Comments
+		a(href=("/" + question.type + "/" + (question.id + 1)) class="btn btn-primary btn-lg" role="button" aria-pressed="true") Next Question&nbsp;
+			i(class="fas fa-arrow-right")

@@ -36,19 +36,6 @@ label {
   font-size: larger;
 }
 
-@media (min-width: 767px) {
-	nav.question-buttons-nav {
-		display: none;
-	}
-}
-
-@media (max-width: 767px) {
-	div.question-buttons-separate {
-		display: none;
-	}
-}
-
-
 aside.primary {
   float: right;
   width: 350px;
@@ -56,6 +43,12 @@ aside.primary {
     float: none;
     width: 100%;
   }
+}
+
+nav.question-buttons {
+	@include breakpoint(md) {
+		display: none;
+	}
 }
 
 nav.question-buttons .btn {
