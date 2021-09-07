@@ -3,11 +3,15 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
+	res.render('welcome', {title: 'Registration'});
+});
+
+router.get('/registration', (req, res) => {
 	res.render('form', {title: 'Registration'});
 });
 
 router.post('/', (req, res) => {
-	res.render('welcome', { title: 'Welcome to CHAMP' });
+	res.render('assessment', { title: 'Welcome to CHAMP' });
 });
 
 router.get('/welcome', (req, res) => {
@@ -39,7 +43,6 @@ router.get('/dailylife/:id/comments', (req, res) => {
 	res.render('comments', { title: 'My Daily Life', question: {id: req.params.id, type: 'dailylife'} });
 });
 
-
 router.get('/mentalhealth', (req, res) => {
 	res.render('mentalhealth/question1', { title: 'My Mental Health', question: {id: 1, type: 'mentalhealth'} });
 });
@@ -54,7 +57,6 @@ router.get('/mentalhealth/:id', (req, res) => {
 router.get('/mentalhealth/:id/comments', (req, res) => {
 	res.render('comments', { title: 'My Mental Health', question: {id: req.params.id, type: 'mentalhealth'} });
 });
-
 
 router.get('/physicalhealth', (req, res) => {
 	res.render('physicalhealth/question1', { title: 'My Physical Health', question: {id: 1, type: 'physicalhealth'} });
