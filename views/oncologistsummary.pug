@@ -1,0 +1,140 @@
+extends layout
+
+block navigation
+	nav(class='navbar container-fluid-nav fixed-top navbar-expand-lg navbar-dark bg-dark')
+		div(class="container-fluid-nav text-center")
+			a(class='navbar-brand back' href='/assessment')
+				i(class="fas fa-arrow-left")
+
+block content
+	h2 Summary for John Doe
+	#accordionExample.accordion
+		.accordion-item
+			h2#headingOne.accordion-header
+				button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+					| Lawton ADL - 14/24 (Comments)
+			#collapseOne.accordion-collapse.collapse(aria-labelledby='headingOne' data-bs-parent='#accordionExample')
+				.accordion-body
+					ul.list-group
+						li.list-group-item
+							h5 Telephone - 1
+							h6 Comment:
+							h7 I don't use the phone anymore
+						li.list-group-item 
+							h5 Laundry - 2
+						li.list-group-item 
+							h5 Shopping - 1
+						li.list-group-item 
+							h5 Driving - 1
+						li.list-group-item 
+							h5 Eating - 1
+							h6 Comment:
+							h7 My wife cooks everything for me, and I never learned how to cook
+						li.list-group-item 
+							h5 Medications - 2
+						li.list-group-item 
+							h5 Housekeeping - 1
+							h6 Comment:
+							h7 We have a housekeeper come every week to help clean the house
+						li.list-group-item 
+							h5 Finances - 2
+						li.list-group-item 
+							h5 Medications - 3
+
+		.accordion-item
+			h2#headingTwo.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+					| PHQ-2 - 4/6 (Comments)
+			#collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#accordionExample')
+				.accordion-body
+					ul.list-group
+						li.list-group-item
+							h5 Interest/Pleasure - 2
+							h6 Comment:
+							h7 COVID has been hard - I don't get to go out anymore
+						li.list-group-item 
+							h5 Down/Depressed/Hopeless
+							h6 Comment:
+							h7 Things seem pretty bad right now in the world, doesn't everyone feel this way?
+
+		.accordion-item
+			h2#headingThree.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+					| Social Life (Comments)
+			#collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+				.accordion-body
+					ul.list-group
+						li.list-group-item
+							h5 Have someone to help with chores - All the time
+							h6 Comment:
+							h7 My wife helps me with chores
+						li.list-group-item 
+							h5 Have someone to turn to for suggestions on how to deal with a personal problem - Some of the time
+						li.list-group-item 
+							h5 Have someone to do something enjoyable with - Not at all
+						li.list-group-item 
+							h5 Have someone to turn to to love and and feel wanted - Some of the time
+						li.list-group-item 
+							h5 Physical health interfered with social activities over the past 4 weeks - All of the time
+							h6 Comment:
+							h7 COVID has been stopping most of it though, does that count?
+		.accordion-item
+			h2#headingFour.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
+					| Falls in past 6 months - 2 (Comments)
+			#collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour' data-bs-parent='#accordionExample')
+				.accordion-body
+					ul.list-group
+						li.list-group-item
+							h6 Comment:
+							h7 Both were very minor falls and I was not hurt, I just lost my balance around the house
+		.accordion-item
+			h2#headingFive.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
+					| Mobility Device - Yes
+			#collapseFive.accordion-collapse.collapse(aria-labelledby='headingFive' data-bs-parent='#accordionExample')
+				.accordion-body
+					ul.list-group
+						li.list-group-item
+							h6 Comment:
+							h7 No Comments
+		.accordion-item
+			h2#headingSix.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix')
+					| Lost 10% of body weight in past 6 months - Yes (Comments)
+			#collapseSix.accordion-collapse.collapse(aria-labelledby='headingSix' data-bs-parent='#accordionExample')
+				.accordion-body
+					ul.list-group
+						li.list-group-item
+							h6 Comment:
+							h7 It was on purpose
+		.accordion-item
+			h2#headingSeven.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseSeven' aria-expanded='false' aria-controls='collapseSeven')
+					| Alcohol use - 1 Drink per week
+			#collapseSeven.accordion-collapse.collapse(aria-labelledby='headingSeven' data-bs-parent='#accordionExample')
+				.accordion-body
+					ul.list-group
+						li.list-group-item
+							h6 Comment:
+							h7 No Comments
+		.accordion-item
+			h2#headingEight.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseEight' aria-expanded='false' aria-controls='collapseEight')
+					| Hearing Difficulty - Yes
+			#collapseEight.accordion-collapse.collapse(aria-labelledby='headingEight' data-bs-parent='#accordionExample')
+				.accordion-body
+					ul.list-group
+						li.list-group-item
+							h6 Comment:
+							h7 No Comments
+		.accordion-item
+			h2#headingNine.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseNine' aria-expanded='false' aria-controls='collapseNine')
+					| Mobility Device - Yes
+			#collapseNine.accordion-collapse.collapse(aria-labelledby='headingNine' data-bs-parent='#accordionExample')
+				.accordion-body
+					ul.list-group
+						li.list-group-item
+							h6 Comment:
+							h7 No Comments
