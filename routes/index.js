@@ -79,7 +79,7 @@ router.get('/social', (req, res) => {
 });
 
 router.get('/social/:id', (req, res) => {
-	if (req.params.id == "8"){
+	if (req.params.id == "11"){
 		res.render('summary', { title: 'Summary', question: {id: 1, type: 'summary'} });
 	}
 	res.render('social/question' + req.params.id, { title: 'My Social Life', question: {id: parseInt(req.params.id), type: 'social'} });
