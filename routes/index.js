@@ -63,7 +63,7 @@ router.get('/physicalhealth', (req, res) => {
 });
 
 router.get('/physicalhealth/:id', (req, res) => {
-	if (req.params.id == "5"){
+	if (req.params.id == "6"){
 		res.render('social/question1', { title: 'Social', question: {id: 1, type: 'social'} });
 	}
 	res.render('physicalhealth/question' + req.params.id, { title: 'My Physical Health', question: {id: parseInt(req.params.id), type: 'physicalhealth'} });

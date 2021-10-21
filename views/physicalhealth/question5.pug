@@ -1,0 +1,27 @@
+extends ../question
+
+block question_category
+	span My Physical Health
+
+block question
+	h4 With regards to your hearing:
+
+	h4 Have you ever had difficulty with your hearing?
+	form
+		div(class="answers")
+			div(class='form-check')
+				input(class='form-check-input' type='radio' id='radio1' name='answer' value='0')
+				label(class='form-check-label' for='radio1') No
+			div(class='form-check')
+				input(class='form-check-input' type='radio' id='radio2' name='answer' value='1')
+				label(class='form-check-label' for='radio2') Yes
+
+	h4 Do you find it difficult to follow a conversation if there is background noise, such as TV, radio or children playing?
+	form
+		div(class="answers")
+			div(class='form-check')
+				input(class='form-check-input' type='radio' id='radio5' name='answer' value='0')
+				label(class='form-check-label' for='radio5') No
+			div(class='form-check')
+				input(class='form-check-input' type='radio' id='radio6' name='answer' value='1')
+				label(class='form-check-label' for='radio6') Yes
