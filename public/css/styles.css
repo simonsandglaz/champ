@@ -32,6 +32,11 @@ a {
   font-size: larger;
 }
 
+div.list-group a.list-group-item p.mb-1 {
+  font-size: 1rem;
+}
+
+
 label {
   font-size: larger;
 }
