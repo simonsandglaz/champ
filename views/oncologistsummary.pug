@@ -7,12 +7,12 @@ block navigation
 				i(class="fas fa-arrow-left")
 
 block content
-	h2 Summary for John Doe
+	h2 Assessment Summary for John Doe
 	#accordionExample.accordion
 		.accordion-item
 			h2#headingOne.accordion-header
 				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
-					| Lawton IADL - Impaired (Comments)
+					| Activities of Daily Living - Dependent in 1 or more IADL (Comments)
 			#collapseOne.accordion-collapse.collapse(aria-labelledby='headingOne')
 				.accordion-body
 					.accordion
@@ -60,7 +60,7 @@ block content
 		.accordion-item
 			h2#headingTwo.accordion-header
 				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
-					| PHQ-2 - Depressed (Comments)
+					| Mental Health - Depressed (Comments)
 			#collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo')
 				.accordion-body
 					.accordion
@@ -94,7 +94,7 @@ block content
 		.accordion-item
 			h2#headingThree.accordion-header
 				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
-					| Social Life - Possible Isolation (Comments)
+					| Social Support - Vulnerable (Comments)
 			#collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree')
 				.accordion-body
 					.accordion
@@ -131,7 +131,7 @@ block content
 		.accordion-item
 			h2#headingFour.accordion-header
 				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
-					| Physical Health (Comments)
+					| Physical Health - Weight Loss/At Risk (Comments)
 			#collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour')
 				.accordion-body
 					.accordion
@@ -152,11 +152,9 @@ block content
 										h6 Comment:
 										h7 It was on purpose
 									li.list-group-item
-										h5 Alcohol use over the past month - Yes
+										h5 Drink frequency over the past 30 days - Once a week
 									li.list-group-item
-										h5 Number of drinks on average in a day when they consumed alcohol - 1
-									li.list-group-item
-										h5 More than 5 drinks in a day over the past month - Never
+										h5 Number of drinks in a day when you did drink - 1
 									li.list-group-item
 										h5 Smoking - Never
 									li.list-group-item
