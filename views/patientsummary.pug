@@ -1,0 +1,245 @@
+extends layout
+
+block navigation
+	nav(class='navbar container-fluid-nav fixed-top navbar-expand-lg navbar-dark bg-dark')
+		div(class="container-fluid-nav text-center")
+			a(class='navbar-brand back' href='/assessment')
+				i(class="fas fa-arrow-left")
+
+block content
+	h2 My Assessment Summary
+	#accordionExample.accordion
+		.accordion-item
+			h2#headingOne.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+					| Daily Activities - Dependent in 1 or more activities (Comments)
+			#collapseOne.accordion-collapse.collapse(aria-labelledby='headingOne')
+				.accordion-body
+					.accordion
+						.accordion-item
+							#headingADLAnswers.accordion-header
+								button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseADLAnswers' aria-expanded='false' aria-controls='collapseOne')
+									| Your Answers
+							#collapseADLAnswers.accordion-collapse.collapse(aria-labelledby="headingADLAnswers")
+								ul.list-group
+									li.list-group-item
+										h5 Telephone - "I do not use the phone"
+										h6 Comment:
+										h7 I don't use the phone anymore
+									li.list-group-item 
+										h5 Laundry - "I am only able to do some parts of the laundry"
+									li.list-group-item 
+										h5 Shopping - "I am unable to go shopping"
+									li.list-group-item 
+										h5 Driving - "I need to be accompanied when taking a taxi or public transportation"
+									li.list-group-item 
+										h5 Eating - "I must have my meals prepared and served to me"
+										h6 Comment:
+										h7 My wife cooks everything for me, and I never learned how to cook
+									li.list-group-item 
+										h5 Medications - "I have my medications with correct dosages and schedule prepared for me, but can take the medication myself"
+									li.list-group-item 
+										h5 Housekeeping - "I need help with all housekeeping tasks"
+										h6 Comment:
+										h7 We have a housekeeper come every week to help clean the house
+									li.list-group-item 
+										h5 Finances - "I can do day-to-day purchases, but need help with banking and major expenses"
+						.accordion-item
+							#headingADL.accordion-header
+								button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapseADL' aria-expanded='true' aria-controls='collapseADL')
+									| Recommendations
+							#collapseADL.accordion-collapse.show(aria-labelledby="headingADL")
+								ul.list-group
+									li.list-group-item
+										h6 Recommendation #1
+										h7 Referral to a social worker
+									li.list-group-item
+										h6 Recommendation #2
+										h7 Referral to an occupational therapist
+
+		.accordion-item
+			h2#headingTwo.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+					| Mental Health - Depressed (Comments)
+			#collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo')
+				.accordion-body
+					.accordion
+						.accordion-item
+							#headingPHQAnswers.accordion-header
+								button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapsePHQAnswers' aria-expanded='true' aria-controls='collapsePHQAnswers')
+									| Your Answers
+							#collapsePHQAnswers.accordion-collapse.collapse(aria-labelledby="headingPHQAnswers")
+								ul.list-group
+									li.list-group-item
+										h5 Little interest/pleasure in doing things over the past two weeks - more than half of the days
+										h6 Comment:
+										h7 COVID has been hard - I don't get to go out anymore
+									li.list-group-item 
+										h5 Feeling down/depressed/hopeless over the past two weeks - more than half of the days
+										h6 Comment:
+										h7 Things seem pretty bad right now in the world, doesn't everyone feel this way?
+						.accordion-item
+							#headingADL.accordion-header
+								button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapseADL' aria-expanded='true' aria-controls='collapsePHQRecommendations')
+									| Recommendations
+							#collapsePHQRecommendations.accordion-collapse.show(aria-labelledby="headingADL")
+								ul.list-group
+									li.list-group-item
+										h6 Recommendation #1
+										h7 Depression assessment followup
+									li.list-group-item
+										h6 Recommendation #2
+										h7 Referral to psychosocial oncology for counselling or medication
+
+		.accordion-item
+			h2#headingThree.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+					| Social Life - Vulnerable (Comments)
+			#collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree')
+				.accordion-body
+					.accordion
+						.accordion-item
+							#headingSocialAnswers.accordion-header
+								button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseSocialAnswers' aria-expanded='true' aria-controls='collapseSocialAnswers')
+									| Your Answers
+							#collapseSocialAnswers.accordion-collapse.collapse(aria-labelledby="headingSocialAnswers")
+								ul.list-group
+									li.list-group-item
+										h5 Have someone to help with chores - All the time
+										h6 Comment:
+										h7 My wife helps me with chores
+									li.list-group-item 
+										h5 Have someone to turn to for suggestions on how to deal with a personal problem - Some of the time
+									li.list-group-item 
+										h5 Have someone to do something enjoyable with - Not at all
+									li.list-group-item 
+										h5 Have someone to turn to to love and and feel wanted - Some of the time
+									li.list-group-item 
+										h5 Physical health interfered with social activities over the past 4 weeks - All of the time
+										h6 Comment:
+										h7 COVID has been stopping most of it though, does that count?
+						.accordion-item
+							#headingSocial.accordion-header
+								button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapseSocial' aria-expanded='true' aria-controls='collapseSocial')
+									| Recommendations
+							#collapseSocial.accordion-collapse.show(aria-labelledby="headingSocial")
+								ul.list-group
+									li.list-group-item
+										h6 Recommendation #1
+										h7 Referral to social worker to help identify community resources
+
+		.accordion-item
+			h2#headingFour.accordion-header
+				button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
+					| Physical Health - Weight Loss/At Risk (Comments)
+			#collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour')
+				.accordion-body
+					.accordion
+						.accordion-item
+							#headingPhysicalAnswers.accordion-header
+								button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapsePhysicalAnswers' aria-expanded='true' aria-controls='collapsePhysical')
+									| Your Answers
+							#collapsePhysicalAnswers.accordion-collapse.collapse(aria-labelledby="headingPhysicalAnswers")
+								ul.list-group
+									li.list-group-item
+										h5 Falls in the last 6 months - 2
+										h6 Comment:
+										h7 Both were very minor falls and I was not hurt, I just lost my balance around the house
+									li.list-group-item
+										h5 Use of Mobility Device - Yes
+									li.list-group-item
+										h5 Lost 10% of body weight in the past 6 months - Yes
+										h6 Comment:
+										h7 It was on purpose
+									li.list-group-item
+										h5 Drink frequency over the past 30 days - Once a week
+									li.list-group-item
+										h5 Number of drinks in a day when you did drink - 1
+									li.list-group-item
+										h5 Smoking - Never
+									li.list-group-item
+										h5 Hearing Difficulty - No
+									li.list-group-item
+										h5 Vision Difficulty - No
+
+						.accordion-item
+							#headingPhysical.accordion-header
+								button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapsePhysical' aria-expanded='true' aria-controls='collapsePhysical')
+									| Recommendations
+							#collapsePhysical.accordion-collapse.show(aria-labelledby="headingPhysical")
+								ul.list-group
+									li.list-group-item
+										h6 Recommendation #1
+										h7 Referral for more detailed fall risk assessment
+									li.list-group-item
+										h6 Recommendation #2
+										h7 Medication review for fall risk
+									li.list-group-item
+										h6 Recommendation #3
+										h7 Postural vitals assessment
+									li.list-group-item
+										h6 Recommendation #4
+										h7 Dietician referral
+	br
+	h2 Recommendations
+	.list-group
+		a.list-group-item.list-group-item-action(href='#recommendation1' data-bs-toggle="collapse")
+			.d-flex.w-100.justify-content-between
+				h5.mb-1 Consider referral to a social worker
+				small.text-muted Daily Activities &amp; Social Life
+			div#recommendation1.collapse
+				p.mb-1 Dependency in one or more IADLs is associated with increased chemotherapy toxicity, postoperative complications, need for postoperative rehabilitation, prolonged postoperative length of stay, and a lower likelihood of treatment adherence.
+				p.mb-1 Limited social supports and/or limitations in social activities is associated with increased risk of chemotherapy toxicity.
+			small.text-muted Impaired in IADL &amp; possible social isolation
+		a.list-group-item.list-group-item-action(href='#recommendation2' data-bs-toggle="collapse")
+			.d-flex.w-100.justify-content-between
+				h5.mb-1 Consider referral to occupational therapist, physiotherapist, or social worker (depending on impairments)
+				small.text-muted Daily Activities
+			div#recommendation2.collapse
+				p.mb-1 Dependency in one or more IADLs is associated with increased chemotherapy toxicity, postoperative complications, need for postoperative rehabilitation, prolonged postoperative length of stay, and a lower likelihood of treatment adherence.
+			small.text-muted Impaired in ADL
+		a.list-group-item.list-group-item-action(href='#recommendation3' data-bs-toggle="collapse")
+			.d-flex.w-100.justify-content-between
+				h5.mb-1 Follow-up to assess depression
+				small.text-muted Mental Health
+			div#recommendation3.collapse
+				p.mb-1 Having significant depressive symptoms is associated with increased risk of chemotherapy toxicity and a lower likelihood of treatment adherence.
+			small.text-muted Scored above 3 on PHQ-2
+		a.list-group-item.list-group-item-action(href='#recommendation4' data-bs-toggle="collapse")
+			.d-flex.w-100.justify-content-between
+				h5.mb-1 Referral to psychosocial oncology for counselling or medication
+				small.text-muted Mental Health
+			div#recommendation4.collapse
+				p.mb-1 Having significant depressive symptoms is associated with increased risk of chemotherapy toxicity and a lower likelihood of treatment adherence.
+			small.text-muted Scored above 3 on PHQ-2
+		a.list-group-item.list-group-item-action(href='#recommendation5' data-bs-toggle="collapse")
+			.d-flex.w-100.justify-content-between
+				h5.mb-1 Fall risk assessment (by LHIN physiotherapist, occupational therapist, physician, or geriatrician)
+				small.text-muted Physical Health
+			div#recommendation5.collapse
+				p.mb-1 Increased falls risk is associated with increased risk of chemotherapy toxicity, chemotherapy treatment delays, and postoperative complications.
+			small.text-muted 2 or more falls in the past 6 months
+		a.list-group-item.list-group-item-action(href='#recommendation6' data-bs-toggle="collapse")
+			.d-flex.w-100.justify-content-between
+				h5.mb-1 Medication review for fall risk (by family physician, pharmacist, or geriatrician)
+				small.text-muted Physical Health
+			div#recommendation6.collapse
+				p.mb-1 Increased falls risk is associated with increased risk of chemotherapy toxicity, chemotherapy treatment delays, and postoperative complications. Blood pressure lowering drugs can by accompanied by dizziness and associated increased fall risk.
+			small.text-muted 2 or more falls in the past 6 months
+		a.list-group-item.list-group-item-action(href='#recommendation7' data-bs-toggle="collapse")
+			.d-flex.w-100.justify-content-between
+				h5.mb-1 Consider postural vitals assessment
+				small.text-muted Physical Health
+			div#recommendation7.collapse
+				p.mb-1 Increased falls risk is associated with increased risk of chemotherapy toxicity, chemotherapy treatment delays, and postoperative complications.
+			small.text-muted 2 or more falls in the past 6 months
+		a.list-group-item.list-group-item-action(href='#recommendation8' data-bs-toggle="collapse")
+			.d-flex.w-100.justify-content-between
+				h5.mb-1 Dietician referral
+				small.text-muted Physical Health
+			div#recommendation8.collapse
+				p.mb-1 Being at risk of malnutrition is associated with increased risk of chemotherapy toxicity and postoperative complications as well as slower surgical recovery.
+			small.text-muted Lost 10% or more of body weight in past 6 months
+
+
+

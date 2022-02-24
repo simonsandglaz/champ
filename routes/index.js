@@ -101,4 +101,8 @@ router.get('/clinicsummary', (req, res) => {
 	res.render('oncologistsummary', { title: "Clinic Summary"})
 });
 
+router.get('/patientsummary', (req, res) => {
+	res.render('patientsummary', { title: "Patient Summary"})
+});
+
 module.exports = router;
